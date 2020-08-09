@@ -96,28 +96,28 @@ def main():
     plt.figure(1)
     # plot pfba vs rba
     plt.scatter(df['rba'], df['pfba'])
-    plt.xlabel('RBA growth rate [1/s]', **axis_font)
+    plt.xlabel('RBA growth rate [1/h]', **axis_font)
     plt.ylabel('pFBA calculated costs [a.u.]', **axis_font)
     #plt.title('RBA vs. pFBA', **title_font)
     
     plt.figure(2)
     # plot weighted pfba vs rba
     plt.scatter(df['rba'], df['w_pfba'])
-    plt.xlabel('RBA growth rate [1/s]', **axis_font)
+    plt.xlabel('RBA growth rate [1/h]', **axis_font)
     plt.ylabel('weighted pFBA calculated costs [a.u.]', **axis_font)
     #plt.title('RBA vs. weighted pFBA', **title_font)
     
     plt.figure(3)
     # plot pfba vs rba with growth rate cutoff at 0.58
     plt.scatter(zoom_df['rba'], zoom_df['pfba'])
-    plt.xlabel('RBA growth rate [1/s]', **axis_font)
+    plt.xlabel('RBA growth rate [1/h]', **axis_font)
     plt.ylabel('pFBA calculated costs [a.u.]', **axis_font)
     #plt.title('RBA vs. pFBA - growth rate cutoff at > 0.58', **title_font)
     
     plt.figure(4)
     # plot weighted pfba vs rba with growth rate cutoff at 0.58
     plt.scatter(zoom_df['rba'], zoom_df['w_pfba'])
-    plt.xlabel('RBA growth rate [1/s]', **axis_font)
+    plt.xlabel('RBA growth rate [1/h]', **axis_font)
     plt.ylabel('weighted pFBA calculated costs [a.u.]', **axis_font)
     #plt.title('RBA vs. weighted pFBA - growth rate cutoff at > 0.58', **title_font)
     
